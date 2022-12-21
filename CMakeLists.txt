@@ -17,5 +17,10 @@ FetchContent_MakeAvailable(fmt range-v3)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(advent2022 main.cpp)
-target_link_libraries(advent2022 range-v3 fmt::fmt)
+
+add_executable(day1 day1.cpp util.cpp)
+target_link_libraries(day1 range-v3 fmt::fmt)
+add_executable(day2 day2.cpp util.cpp)
+target_link_libraries(day2 range-v3 fmt::fmt)
+add_executable(day3 day3.cpp util.cpp)
+target_link_libraries(day3 range-v3 fmt::fmt)
